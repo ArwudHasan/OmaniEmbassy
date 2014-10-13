@@ -6,6 +6,11 @@
 
 /* Global Styles */
 
+* {
+    font-family:  sans-serif;
+    font-weight: 200;
+}
+
 .header {
     padding-top: 10px;
     margin: 0 auto;
@@ -20,7 +25,7 @@
 .dialog t{
     width: 325px;
     word-wrap: break-word;
-    font-family: helve;
+    font-family: serif;
     font-size: 20px;
     color: green;
     padding-right: 10px;
@@ -45,25 +50,63 @@ body {
     background-repeat: repeat-x repeat-y;
 }
 
-background {
-
+#topbox {
+    box-shadow: 0 3px 3px rgba(0,0,0, 0.3);
+    background-image: url(images/lolpls.jpg);
 }
+
+#botbox {
+    box-shadow: 0px -3px 3px rgba(0,0,0, 0.3);
+    background-image: url(images/lolpls.jpg);
+}
+
+#location {
+    width: 100%;
+}
+
+ul{
+    font-family: serif;
+    font-size: 18px;
+    border-radius: 0px;
+    border: 0px solid green;
+    <!--box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); -->
+    
+}
+
+ul a:hover {
+  color: #91A36A;
+  <!--text-shadow: 0 2px 2px #bdcd9c;-->
+}
+
+ul li:first-child {
+    padding-left: 20px;
+}
+
+ul li:last-child {
+    padding-right: 20px;
+}
+
+ol a{
+color: #555555;
+}
+
+ol a:hover {
+    color: #586835;
+    text-shadow: 0 2px 2px white;
+}
+
 li a{
    color:#555555; 
 }
 .navbar-inner {
     text-align: center;
-    
+    font-weight: 200;
 }
 
 .navbar .navbar-inner .nav {
     float: none;
     display:inline-block;
     vertical-align: bottom;
-}
-
-body {
-    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -78,9 +121,17 @@ body {
 header.carousel {
     height: 100%;
 }
-h4{
- color: #bc2a2a;   
+
+h12 {
+    font-size: 30px;
+   font-family: sans-serif;
 }
+
+h4{
+    color: #bc2a2a;  
+    font-weight: 100;
+}
+
 p strong{
  
 }
@@ -92,19 +143,22 @@ hr{
 a{
  color: green;   
 }
+
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
-    font-family: hel;
+    font-family: sans-serif;
     text-shadow: 2px 2px #ff0000;
 }
 
 header.carousel .carousel-caption {
+    font-family: sans-serif;
+    text-shadow: 0px 3px 3px rgba(0,0,0, 0.3);
 }
 
 header .carousel-indicators {
-    
+    bottom: -5px;
 }
 
 header.carousel .fill {
@@ -117,29 +171,21 @@ header.carousel .fill {
 #mid {
   padding-top: 30px  
 }
+
+#servPane {
+    background-image: url(images/lolpls.jpg);
+}
+
+#aboutPane {
+    background-image: url(images/lolpls.jpg);
+}
 /* 404 Page Styles */
 
 .error-404 {
     font-size: 100px;
 }
-/* Pricing Page Styles */
 
-.price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
-}
 
-.price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
-}
-
-.period {
-    display: block;
-    font-style: italic;
-}
 #location{
     padding-bottom: 20px;      
 }
@@ -154,7 +200,6 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer {
-  
     text-align: center;
 }
 
