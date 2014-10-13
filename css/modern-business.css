@@ -7,8 +7,8 @@
 /* Global Styles */
 
 * {
-    font-family:  sans-serif;
-    font-weight: 200;
+    font-family: sans;
+    font-weight: 100;
 }
 
 .header {
@@ -38,11 +38,6 @@
     padding-left: 10px;
 }
 
-header #myCarousel{
-    padding-top: 0px;
-}
-
-
 body {
     height: 100%;
     background-position: center;
@@ -60,13 +55,11 @@ body {
     background-image: url(images/lolpls.jpg);
 }
 
-#location {
-    width: 100%;
-}
 
 ul{
     font-family: serif;
-    font-size: 18px;
+    font-variant: small-caps;
+    font-size: 20px;
     border-radius: 0px;
     border: 0px solid green;
     <!--box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); -->
@@ -78,12 +71,9 @@ ul a:hover {
   <!--text-shadow: 0 2px 2px #bdcd9c;-->
 }
 
-ul li:first-child {
-    padding-left: 20px;
-}
-
-ul li:last-child {
-    padding-right: 20px;
+ul li {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 ol a{
@@ -128,6 +118,7 @@ h12 {
 }
 
 h4{
+    font-variant: small-caps;
     color: #bc2a2a;  
     font-weight: 100;
 }
@@ -169,7 +160,8 @@ header.carousel .fill {
 }
 
 #mid {
-  padding-top: 30px  
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 #servPane {
