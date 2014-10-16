@@ -11,17 +11,18 @@
     font-weight: 100;
 }
 
+/* Navbar and Banner */
+
 .header {
     padding-top: 10px;
+    padding-bottom: 20px;
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
 }
-
 #headp {
     text-align: center;
 }
-
 .dialog t{
     width: 325px;
     word-wrap: break-word;
@@ -30,21 +31,12 @@
     color: green;
     padding-right: 10px;
 }
-
 .dialog t1{
     font-family: helve;
     font-size: 35px;
     color: green;
     padding-left: 10px;
 }
-
-body {
-    height: 100%;
-    background-position: center;
-    background-size: 50px 50px;
-    background-repeat: repeat-x repeat-y;
-}
-
 #topbox {
     box-shadow: 0 3px 3px rgba(0,0,0, 0.3);
     background-image: url(images/lolpls.jpg);
@@ -55,50 +47,43 @@ body {
     background-image: url(images/lolpls.jpg);
 }
 
-
-ul{
+.navbar-default ul{
     font-family: serif;
     font-variant: small-caps;
     font-size: 20px;
-    border-radius: 0px;
-    border: 0px solid green;
-    <!--box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); -->
-    
+    width: 50%;
 }
 
-ul a:hover {
-  color: #91A36A;
-  <!--text-shadow: 0 2px 2px #bdcd9c;-->
-}
-
-ul li {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-ol a{
-color: #555555;
-}
-
-ol a:hover {
-    color: #586835;
-    text-shadow: 0 2px 2px white;
-}
-
-li a{
-   color:#555555; 
-}
-.navbar-inner {
+.navbar-default li {
+    display: inline-block;
     text-align: center;
-    font-weight: 200;
+    width: 20%;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: black;
+    background-color: rgba(0,0,0,0.05);
 }
 
-.navbar .navbar-inner .nav {
-    float: none;
-    display:inline-block;
-    vertical-align: bottom;
+.navbar-default {
+    text-align: center;
+    background-color: rgba(0,0,0,0.05);
 }
 
+.navbar .navbar-default .nav {
+    float:none;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 1000;
+}
+
+/* Body */
+
+body {
+    height: 100%;
+    background-position: center;
+    background-size: 50px 50px;
+    background-repeat: repeat-x repeat-y;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }

@@ -5106,10 +5106,10 @@ modal-body {
 	}
 	.carousel-control .glyphicon-chevron-left,
 	.carousel-control .icon-prev
-		{margin-left:-15px;}
+		{margin-left:-20px;}
 	.carousel-control .glyphicon-chevron-right,
 	.carousel-control .icon-next
-		{margin-right:-15px;}
+		{margin-right:-20px;}
 	.carousel-caption {
 		right:20%;
 		left:20%;
