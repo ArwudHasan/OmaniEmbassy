@@ -6,8 +6,10 @@
 
 /* Global Styles */
 
+@import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
+
 * {
-    font-family: sans;
+    font-family: sans, 'Scheherazade';
     font-weight: 100;
 }
 
@@ -32,8 +34,8 @@
     padding-right: 10px;
 }
 .dialog t1{
-    font-family: helve;
-    font-size: 35px;
+    font-family: 'Scheherazade', serif;
+    font-size: 45px;
     color: green;
     padding-left: 10px;
 }
@@ -48,9 +50,9 @@
 }
 
 .navbar-default ul{
-    font-family: serif;
+    font-family: 'Scheherazade';
     font-variant: small-caps;
-    font-size: 20px;
+    font-size: 32px;
     width: 50%;
 }
 
@@ -59,9 +61,15 @@
     text-align: center;
     width: 20%;
 }
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     color: black;
     background-color: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+    -ms-transition:all .5s;
 }
 
 .navbar-default {
@@ -97,39 +105,29 @@ body {
     height: 100%;
 }
 
-h12 {
-    font-size: 30px;
-    font-family: serif;
-    font-variant: small-caps;
-    text-shadow: 1px 1px 1px rgba(0,0,0,1);
-}
-
-h4{
-    font-variant: small-caps;
-    color: #bc2a2a;  
-    font-weight: 100;
-}
-
-p strong{
- 
-}
-hr{
-   
-    border-color: green;
-}
-
-a{
- color: green;   
-}
-
-
 .carousel-indicators {
     bottom: -5px;
+}
+
+
+#mid a {
+    color: green;
+    font-variant: small-caps;
+    font-size: 30px;
+}
+
+#mid a:hover, focus {
+    color: #bc2a2a;
+    -webkit-transition:all .6s;
+    -moz-transition:all .6s;
+    -o-transition:all .6s;
+    -ms-transition:all .6s;
 }
 
 #mid {
     padding-top: 50px;
     padding-bottom: 30px;
+    font-size: 20px;
 }
 
 #servPane {
@@ -143,6 +141,28 @@ a{
 
 .error-404 {
     font-size: 100px;
+}
+
+h12 {
+    font-size: 30px;
+    font-family: serif;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+}
+
+h4{
+    font-variant: small-caps;
+    color: #bc2a2a;  
+    font-weight: 500;
+    font-size: 28px;
+}
+
+p strong{
+ 
+}
+hr{
+   
+    border-color: green;
 }
 
 

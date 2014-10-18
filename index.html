@@ -57,7 +57,7 @@
                         <a href="contact.html">About Oman</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact us</a>
+                        <a href="contact.html">الرئيسية</a>
                     </li>
                     </ul> 
                 </div>
@@ -226,6 +226,15 @@
     $('.carousel').carousel({
         interval: 3500 //changes the speed
     })
+    </script>
+
+    <script>
+    $('document').ready(function(){
+        $("#navbar li a").hover(function(){
+            $("#navbar ul").css("display","block"); 
+        }); 
+    }); 
+
     </script>
 
 </body>
