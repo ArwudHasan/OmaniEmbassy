@@ -5049,8 +5049,8 @@ modal-body {
 	margin-top:-10px;
 	font-family:serif;
 }
-.carousel-control .icon-prev:before {content:'\2039';}
-.carousel-control .icon-next:before {content:'\203a';}
+.carousel-control .icon-prev:before {content:'\2039'; opacity: 1;}
+.carousel-control .icon-next:before {content:'\203a'; opacity: 1;}
 
 .carousel-indicators {
 	position:absolute;
@@ -5077,7 +5077,13 @@ modal-body {
 	border-radius:10px;
 }
 
-.carousel-indicators .active {background-color:#fff;}
+.carousel-indicators .active {
+    -webkit-transition: opacity 0.8s linear;
+    -moz-transition: opacity 0.8s linear;
+    -o-transition: opacity 0.8s linear;
+    transition: 0.8s linear;
+    background-color:#fff;
+}
 
 
 .carousel-caption {

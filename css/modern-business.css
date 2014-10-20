@@ -66,10 +66,10 @@
     color: black;
     background-color: rgba(0,0,0,0.05);
     border-radius: 10px;
-    -webkit-transition:all .5s;
-    -moz-transition:all .5s;
-    -o-transition:all .5s;
-    -ms-transition:all .5s;
+    -webkit-transition:all .8s;
+    -moz-transition:all .8s;
+    -o-transition:all .8s;
+    -ms-transition:all .8s;
 }
 
 .navbar-default {
@@ -109,6 +109,38 @@ body {
     bottom: -5px;
 }
 
+.carousel .item {
+    -webkit-transition: opacity 0.8s linear;
+    -moz-transition: opacity 0.8s linear;
+    -o-transition: opacity 0.8s linear;
+    transition: opacity 0.8s linear;
+}
+
+.carousel img {
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+
+.carousel .item .active {
+    opacity: 1;
+}
+
+.carousel .carousel-inner .active.left,
+.carousel .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel .carousel-inner .next.left,
+.carousel .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel .carousel-control {
+  z-index: 2;
+}
 
 #mid a {
     color: green;
