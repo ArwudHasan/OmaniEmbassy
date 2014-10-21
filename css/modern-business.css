@@ -41,23 +41,28 @@
 }
 #topbox {
     box-shadow: 0 3px 3px rgba(0,0,0, 0.3);
-    background-image: url(images/lolpls.jpg);
+    background-image: url(images/pattern5w.jpg);
+
 }
 
 #botbox {
     box-shadow: 0px -3px 3px rgba(0,0,0, 0.3);
-    background-image: url(images/lolpls.jpg);
+    background-image: url(images/pattern5w.jpg);
+}
+
+#bot {
+    background-color: rgba(0,0,0,0.05);
 }
 
 .navbar-default ul{
     font-family: 'Scheherazade';
     font-variant: small-caps;
     font-size: 32px;
-    width: 50%;
+    width: 60%;
 }
 
 .navbar-default li {
-    display: inline-block;
+    display: block;
     text-align: center;
     width: 20%;
 }
@@ -81,16 +86,14 @@
     float:none;
     display: inline-block;
     vertical-align: middle;
-    z-index: 1000;
 }
 
 /* Body */
 
 body {
     height: 100%;
-    background-position: center;
-    background-size: 50px 50px;
-    background-repeat: repeat-x repeat-y;
+    background-image: url(images/pattern5wb.jpg);
+
 }
 .img-portfolio {
     margin-bottom: 30px;
@@ -103,6 +106,9 @@ body {
 /* Home Page Carousel */
 .carousel {
     height: 100%;
+    width: 60%;
+    margin: auto;
+    padding-top: 15px;
 }
 
 .carousel-indicators {
@@ -114,6 +120,7 @@ body {
     -moz-transition: opacity 0.8s linear;
     -o-transition: opacity 0.8s linear;
     transition: opacity 0.8s linear;
+    border-radius: 100px;
 }
 
 .carousel img {
@@ -121,6 +128,8 @@ body {
     max-height: 100%;
     max-width: 100%;
     overflow: auto;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
 
@@ -139,13 +148,16 @@ body {
   opacity: 1;
 }
 .carousel .carousel-control {
-  z-index: 2;
+    background-color: transparent;
+    z-index: 2;
+    opacity: 1;
 }
 
 #mid a {
     color: green;
     font-variant: small-caps;
-    font-size: 30px;
+    font-size: 25px;
+    float: right;
 }
 
 #mid a:hover, focus {
@@ -162,12 +174,20 @@ body {
     font-size: 20px;
 }
 
+.panel {
+    box-shadow: 1px 3px 3px rgba(0,0,0, 0.1);
+}
+
 #servPane {
-    background-image: url(images/lolpls.jpg);
+    background-image: url(images/pattern5wp.jpg);
 }
 
 #aboutPane {
-    background-image: url(images/lolpls.jpg);
+    background-image: url(images/pattern5wp.jpg);
+}
+
+#newsPane {
+    background-image: url(images/pattern5wb.jpg)
 }
 /* 404 Page Styles */
 
@@ -186,7 +206,7 @@ h4{
     font-variant: small-caps;
     color: #bc2a2a;  
     font-weight: 500;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 p strong{
