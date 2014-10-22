@@ -216,22 +216,8 @@ h4{
 
 /* Services page styling start */ 
 #services{
-    padding-left: 50px;   
+ padding-left: 50px;   
 }
-
-#services p{
-    font-size: 25px;  
-}
-
-#services p strong{
-    font-size: 25px;  
-}
-
-#services t{
-    font-weight: bold;
-    font-size: 15px;  
-}
-
 #services hr{
  border-color: green;
     padding-right: 50px;
@@ -246,9 +232,7 @@ h4{
     padding-bottom: 10px; 
 }
 #services h2{
-    color: #bc2a2a;   
-    font-size: 35px;
-    font-weight: bold;
+ color: #bc2a2a;   
 }
 
 #services li{
