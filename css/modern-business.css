@@ -216,9 +216,34 @@ h4{
 p strong{
  
 }
-hr{
+
+#services{
+ padding-left: 50px;   
+}
+
+#services h2{
+ color: #bc2a2a;   
+}
+
+#services li{
+ list-style-type: square;
+    color: green;
+}
+#services li p{
+ color: black;   
+}
+
+#services strong{
+ font-size: 18px;   
+}
+#services ol li{
+ list-style-type: decimal;
+    color: green;
+}
+#edu hr{
    
     border-color: green;
+    padding-right: 50px;
 }
 
 
