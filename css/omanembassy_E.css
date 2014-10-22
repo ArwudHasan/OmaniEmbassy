@@ -213,14 +213,24 @@ h4{
     font-size: 30px;
 }
 
-p strong{
- 
-}
 
+/* Services page styling start */ 
 #services{
  padding-left: 50px;   
 }
+#services hr{
+ border-color: green;
+    padding-right: 50px;
+    padding-bottom: 15px   
+}
 
+#services h1{
+    font-variant: small-caps; 
+    font-size: 50px; 
+    color: green; 
+    text-align: center; 
+    padding-bottom: 10px; 
+}
 #services h2{
  color: #bc2a2a;   
 }
@@ -236,15 +246,77 @@ p strong{
 #services strong{
  font-size: 18px;   
 }
+
 #services ol li{
  list-style-type: decimal;
     color: green;
 }
+/* Services page styling end */ 
+
+
+/* Education page styling start */ 
 #edu hr{
-   
     border-color: green;
     padding-right: 50px;
+    padding-bottom: 15px   
 }
+
+#edu h1{
+    font-variant: small-caps; 
+    font-size: 50px; 
+    color: green; 
+    text-align: center; 
+    padding-bottom: 10px; 
+}
+
+#edu img{
+    box-shadow: 2px 2px 5px #888888;
+    float: right;
+    width:80px;
+    height:80px;
+}
+
+#edu h2{
+    color: #bc2a2a; 
+    font-size: 35px;
+}
+
+#edu strong{
+    font-size: 18px;   
+}
+/* Education page styling end */ 
+
+/* Business page styling start */ 
+#business hr{
+    border-color: green;
+    padding-right: 50px;
+    padding-bottom: 15px   
+}
+
+#business h1{
+    font-variant: small-caps; 
+    font-size: 50px; 
+    color: green; 
+    text-align: center; 
+    padding-bottom: 10px; 
+}
+
+#business img{
+    box-shadow: 2px 2px 5px #888888;
+    float: right;
+    width:80px;
+    height:80px;
+}
+
+#business h2{
+    color: #bc2a2a;  
+    font-size: 35px;
+}
+
+#business strong{
+ font-size: 18px;   
+}
+/* Business page styling end */ 
 
 
 #location{
