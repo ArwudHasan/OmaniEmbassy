@@ -68,58 +68,47 @@
     
 
 
+    <!-- Header Carousel -->
+    
+    
     <body>  
-
-        <div id="gall" class="container">
-
-            <div class="row">
-
+        <div id="gallcont">     
+            <div class="container-fluid">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Musandam Governorate</h1>
+                <h1>Musandam Governorate</h1>
+                    <hr>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/Al%20Montaser%204.JPG" alt="">
-                    </a>
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/khasab.jpg"></a></div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/Al%20Montaser%204.JPG"></a></div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/Arial-view-Khasab-low-web-1.jpg"></a></div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/DSCF0172.JPG"></a></div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/musandam-fjord-oman-3-1.jpg"></a></div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/musandam-fjords-oman-1-1.jpg"></a></div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/Musandam_fjord.jpg"></a></div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb"><a href="#"><img class="thumbnail img-responsive" src="Images/musandam/vue-aerienne-de-khasab-visoterra-55921.jpg"></a></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/Arial-view-Khasab-low-web-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/DSCF0172.JPG" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/khasab.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/musandam-fjord-oman-3-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/musandam-fjords-oman-1-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/Musandam_fjord.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="Images/musandam/vue-aerienne-de-khasab-visoterra-55921.jpg" alt="">
-                    </a>
-                </div>
+                <hr>
             </div>
         </div>
+        
+<div class="modal" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+	<div class="modal-header">
+	</div>
+	<div class="modal-body">
+		<div id="modalCarousel" class="carousel slide">
+          <div class="carousel-inner"></div>
+          <a class="carousel-control left" href="#modalCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+	</div>
+	<div class="modal-footer">
+	</div>
+   </div>
+  </div>
+</div>
         
     </body>
     
@@ -190,9 +179,46 @@
             $("#navbar ul").css("display","block"); 
         }); 
     }); 
-
     </script>
 
+<script>
+    /* copy loaded thumbnails into carousel */
+    $('.row .thumbnail').on('load', function() {
 
+    }).each(function(i) {
+      if(this.complete) {
+        var item = $('<div class="item"></div>');
+        var itemDiv = $(this).parents('div');
+        var title = $(this).parent('a').attr("title");
+
+        item.attr("title",title);
+        $(itemDiv.html()).appendTo(item);
+        item.appendTo('.carousel-inner'); 
+        if (i==0){ // set first item active
+         item.addClass('active');
+        }
+      }
+    });
+
+    /* activate the carousel */
+    $('#modalCarousel').carousel({interval:false});
+
+    /* change modal title when slide changes */
+    $('#modalCarousel').on('slid.bs.carousel', function () {
+      $('.modal-title').html($(this).find('.active').attr("title"));
+    })
+
+    /* when clicking a thumbnail */
+    $('.row .thumbnail').click(function(){
+        var idx = $(this).parents('div').index();
+        var id = parseInt(idx);
+        $('#myModal').modal('show'); // show the modal
+        $('#modalCarousel').carousel(id); // slide carousel to selected
+
+    });
+</script>
+
+
+</body>
 
 </html>
